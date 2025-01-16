@@ -1,0 +1,15 @@
+CREATE TABLE AutoUsate (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    Marca VARCHAR(50) NOT NULL,
+    Modello VARCHAR(50) NOT NULL,
+    Anno INT NOT NULL,
+    Prezzo DECIMAL(10, 2) NOT NULL,
+    Chilometraggio INT NOT NULL,
+    Colore VARCHAR(30),
+    TipoCarburante ENUM('Benzina', 'Diesel', 'Elettrico', 'Ibrido'),
+    Cambio ENUM('Manuale', 'Automatico'),
+    NumeroPorte INT,
+    PotenzaCV INT,
+    DataInserzione DATE,
+    Descrizione TEXT
+);
